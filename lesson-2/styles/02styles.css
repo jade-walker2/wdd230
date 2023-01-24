@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Gemunu+Libre&display=swap");
+
+html{
+    background-color: lightgray;
+}
+
+body{
+    background-color: white;
+    font-size: 20px;
+    padding: 25px;
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Gemunu Libre";
+
+}
+
+header{
+    gap: 20px;
+    background-color: rgb(40, 139, 231);
+    border: 10px solid black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    background-color: rgb(40, 139, 231);
+    border: 10px solid black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    grid-row: 1 / 2;
+}
+
+.name {
+    grid-row: 1 / 2;
+}
+
+.vb {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.fox-title {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.fox a{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.fox-paragraph {
+    grid-row: 5 / 6;
+}

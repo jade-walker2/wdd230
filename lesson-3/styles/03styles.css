@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Gemunu+Libre&display=swap");
+
+html{
+    background-color: lightgray;
+}
+
+body{
+    background-color: white;
+    font-size: 20px;
+    padding: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: "Gemunu Libre";
+
+}
+
+header{
+    gap: 20px;
+    background-color: rgb(40, 139, 231);
+    border: 5px solid black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+main {
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+}
+
+footer {
+    background-color: rgb(40, 139, 231);
+    border: 5px solid black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+@media screen and (max-width: 900px){
+    nav ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+tr {
+    vertical-align: top;
+}
+
+td {
+    padding: 0px 20px 0px 20px;
+}

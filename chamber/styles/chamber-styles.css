@@ -18,12 +18,13 @@ body{
 
 header{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 100px auto auto auto;
+    gap: 10px;
     background-color: #005EFF;
     color: white;
     font-family: sofia;
     text-align: center;
-    padding: 10px;
+    padding: 10px 80px;
     align-items: center;
 }
 
@@ -39,13 +40,14 @@ header{
 footer {
     align-items: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 100px auto auto;
+    gap: 10px;
     grid-template-rows: auto auto;
     background-color: #005EFF;
     color: white;
     font-family: 'Sofia Sans', sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 10px 80px;
 }
 
 nav ul {
@@ -133,6 +135,43 @@ nav a:hover {
       grid-row: 2 / 3;
   }
 
+  #weather h2 {
+      font-size: 15px;
+      text-align: center;
+  }
+
+  #weather div {
+      border: 0px solid black;
+  }
+
+  .conditions {
+      width: 95% !important;
+      display: flex;
+      border: 0px solid black;
+      height: 50px !important;
+  }
+
+  .conditions div {
+      height: 50px !important;
+  }
+
+  .weather-container {
+      display: flex;
+      justify-content: center;
+      width: 95% !important;
+      height: 100px !important;
+  }
+
+  #weather h1 {
+      font-size: 30px;
+      text-align: center;
+  }
+
+  #weather h3 {
+      font-size: 15px;
+      text-align: center;
+  }
+
   #join {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
@@ -158,6 +197,7 @@ nav a:hover {
   #spotlights-container {
       grid-column: 3 / 4;
       grid-row: 1 / 4;
+      height: 100% !important;
   }
 
   #spotlights {
@@ -347,5 +387,14 @@ nav a:hover {
         grid-row: 4 / 5;
     }
 
-   
+    header {
+        padding: 10px 20px;
+    }
+
+
+   footer {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }

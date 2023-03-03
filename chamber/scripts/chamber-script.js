@@ -22,3 +22,7 @@ function myFunction() {
 	document.querySelector(".menu").classList.toggle("active");
   }
   document.querySelector(".icon").addEventListener("click",myFunction);
+
+  if (now.getDay()===1 || now.getDay()===2){
+      document.querySelector("#notification").style.display="block"
+  }

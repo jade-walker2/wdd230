@@ -13,7 +13,11 @@ body{
     font-size: 20px;
     max-width: 1250px;
     margin: 0 auto;
-    
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 header{
@@ -128,6 +132,8 @@ nav a:hover {
   #event {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
+      padding: 10px;
+      text-align: center;
   }
 
   #weather {
@@ -175,6 +181,22 @@ nav a:hover {
   #join {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #join p {
+      font-size: 25px;
+      text-align: center;
+  }
+
+  #join button {
+      font-size: 40px;
+      border-radius: 8px;
+      background-color: red;
+      width: 200px;   
   }
 
   #hero {
@@ -186,12 +208,31 @@ nav a:hover {
 
   #hero img {
       width: 100%;
+      position: relative;
+  }
+
+  #hero h1 {
+      position: absolute;
+      top: 190px;
+      right: 800px;
+  }
+
+  #hero button {
+      position: absolute;
+      top: 740px;
+      right: 650px;
+      width: 200px;
+      font-size: 45px;
+      border-radius: 8px;
+      background-color: red;
   }
 
   #news {
       grid-column: 2 / 3;
       grid-row: 3 / 4;
       width: 100% !important;
+      padding: 15px;
+      text-align: center;
   }
 
   #spotlights-container {
@@ -209,8 +250,29 @@ nav a:hover {
       height: 100% !important;
   }
 
+  hr {
+      width: 100%;
+  }
+
+  #spotlights h1 {
+      font-size: 25px;
+  }
+
+  #spotlights p {
+      font-size: 15px;
+      margin: 5px;
+      text-align: center;
+  }
+
+  #spotlights h2 {
+      font-size: 15px;
+  }
+
   #spotlight-1, #spotlight-2, #spotlight-3 {
       width: 280px !important;
+      display: flex;
+        flex-direction: column;
+        align-items: center;
   }
 
   #footer-title {
@@ -291,6 +353,17 @@ nav a:hover {
     display: flex !important;
   }
 
+  #notification {
+      display: none;
+      background-color: lightgray;
+      text-align: center;
+  }
+
+  #notification p {
+      padding: 10px;
+      margin: 0;
+  }
+
 /* Medium */
 @media screen and (max-width: 900px){
     main {
@@ -301,17 +374,32 @@ nav a:hover {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
+    #hero img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
     #news {
         grid-column: 1 / 3;
         grid-row:  2 / 3;
     }
     #spotlights {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #spotlights-container {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
+        width: 100% !important;
+    }
+    #spotlight-3 {
+        display: none;
     }
     #join {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
+        width: 100% !important;
+
     }
     #event {
         grid-column: 1 / 2;

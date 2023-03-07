@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/chamber-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/chamber-script.js" defer></script>
     <title>Idaho Falls Chamber Home Page</title>
 </head>
@@ -18,7 +19,7 @@
     </div>
     <header>
         <div id="logo-box">
-        <img src="./images/IdahoFallsLogo.png" alt="Idaho Falls Logo" height="100">
+        <img src="./images/IdahoFallsLogo.webp" alt="Idaho Falls Logo" height="100">
         </div>
         <div id="title-div">
             <h1 id="title">Idaho Falls</h1>
@@ -62,7 +63,9 @@
                 <h1>Weather</h1>
                 <div class="weather-container">
                     <img src="./images/weather-icon.png" alt="Weather Icon" height="70"> 
-                    <p>33</p>
+                    <p id="temperature"></p>
+                    <span>&deg; F</span>
+                    
                 </div>
                 <h3>Partly Cloudy</h3>
                 <hr>
@@ -72,8 +75,8 @@
                         <h2>Wind Chill</h2>
                     </div>
                     <div>
-                        <h2 class="wind-speed">2.5 km/h</h2>
-                        <h2 class="windchill">N/A</h2>
+                        <h2 id="windspeed"></h2>
+                        <h2 id="windchill"></h2>
                     </div>
                 </div>
 
@@ -83,7 +86,11 @@
                 <p>Discover how to join the Idaho Falls Chamber of Commerce. Get your bussiness out there!</p>
             </div>
             <div id="hero">
-                <img src="./images/IdahoFalls-hero.jpg" alt="Idaho Falls">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./images/wdd230-org-small.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/wdd230-org-medium.jpg">
+                    <img src="./images/wdd230-org-large.jpg" alt="Idaho Falls">
+                </picture>
                 <h1>Welcome to Idaho Falls!</h1>
                 <button>Join Us!</button>
             </div>

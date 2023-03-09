@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the chamber home page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/chamber-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/join.js" defer></script>
+    <script src="./scripts/chamber-script.js" defer></script>
+    <title>Idaho Falls Chamber Home Page</title>
+</head>
+<body>
+    <div id="notification">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <div id="logo-box">
+        <img src="./images/IdahoFallsLogo.webp" alt="Idaho Falls Logo" height="100">
+        </div>
+        <div id="title-div">
+            <h1 id="title">Idaho Falls</h1>
+            <h2 id="title2">Chamber of Commerce</h2>
+        </div>
+       
+       <div class="date"></div>
+        <aside></aside>
+        <div id="social-media">
+        <a href="https://www.facebook.com/groups/lifeinidahofalls" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/idahofallschamber/" class="fa fa-instagram"></a>
+        </div>
+        
+        <!-- Top Navigation Menu -->
+<div class="topnav">
+    <div class="menu">
+    <a href="index.html">Home</a>
+    <!-- Navigation links (hidden by default) -->
+      <a href="discover.html">Discover</a>
+      <a href="page3.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="page5.html">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+    </header>
+    <main>
+        <div id="join-grid">
+            <form method="GET" action="thankyou.html">
+                <input type="hidden" id="date-form">
+                <label>First Name:<input type="text" name="fname" required></label>
+                <label>Last Name:<input type="text" name="lname" required></label>
+                <label>Bussiness Position:<input type="text" name="position" pattern="[- A-Za-z]+" required minlength="7"></label>
+                <label>Email:<input type="email" name="email" required placeholder="example@mail.com"></label>
+                <label>Cell Phone:<input type="tel" name="phone" required></label>
+                <label>Business Name:<input type="text" name="business" required></label>
+                <label>Membership Level:
+                    <select name="membership">
+                        <option value="">Please select one:</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>    
+                    </select>
+                </label>
+                <label>Bussiness Description:
+                    <textarea name="description" cols="20" rows="5"></textarea>
+                </label>
+                <button type="submit">Join the Chamber</button>
+                </form>
+            <div id="membership-description">
+                <h1>NP Membership</h1>
+                <ul>
+                    <li>For non profit organizations and there is no fee.</li>
+                </ul>
+                <h1>Bronze Membership</h1>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50 a month</li>
+                </ul>
+                <h1>Silver Membership</h1>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100 a month</li>
+                </ul>
+                <h1>Gold Membership</h1>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250 a month</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logo-box-footer">
+            <img src="./images/IdahoFallsLogo.png" alt="Idaho Falls Logo" height="100">
+            </div>
+            <div id="footer-title">
+                <h1>Idaho Falls Chamber of Commerce</h1>
+                <h2>1000 Memorial Dr, Idaho Falls, ID 83402</h2>
+            </div>
+            <div id="contact-info">
+                <h2>@idahofallschamberofcommerce.com</h2>
+                <h2>+(208)-789-1235</h2>
+                <a href="https://goo.gl/maps/bjpnam8ZX95TAhAs7" target="_blank">Location Map</a>
+            </div>
+        <div id="footer-end">
+            <p id="copyright">&copy; <span id="date"></span> | Jade Walker | Idaho | <span id = "result"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

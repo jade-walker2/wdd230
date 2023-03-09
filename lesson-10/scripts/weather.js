@@ -20,7 +20,6 @@ weatherIcon.setAttribute('src', icon);
 weatherIcon.setAttribute('alt', description);
 captionDesc.textContent = description
 
-
 }
 
 async function apiFetch() {

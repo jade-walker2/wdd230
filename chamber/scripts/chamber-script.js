@@ -49,8 +49,17 @@ const description = weatherData.weather[0].main;
 weatherIcon.setAttribute('src', icon);
 weatherIcon.setAttribute('alt', description);
 captionDesc.textContent = description
-
-
+console.log(weatherData);
+let windSpeed = (document.querySelector("#windspeed").textContent=weatherData.wind.speed);
+ // Set up the wind chill content
+ let windChillMessage = "N/A";
+ console.log(windSpeed, weatherData.main.temp.toFixed(0))
+ if (windSpeed >= 3.0 && weatherData.main.temp.toFixed(0) <= 50) {
+   let chill = Math.round(35.74 + 0.6215 * weatherData.main.temp.toFixed(0) - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * weatherData.main.temp.toFixed(0) * Math.pow(windSpeed, 0.16));
+   windChillMessage = `${chill}`;
+   console.log("windchill");
+ }
+ document.querySelector("#windchill").textContent=windChillMessage;
 }
 
 async function apiFetch() {
@@ -69,3 +78,4 @@ console.log(error);
 }
 
 apiFetch();
+

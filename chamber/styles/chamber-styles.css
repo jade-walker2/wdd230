@@ -168,9 +168,13 @@ nav a:hover {
       display: flex;
       justify-content: center;
       width: 95% !important;
-      height: 100px !important;
+      height: 150px !important;
       align-items: center;
   }
+
+  figcaption {
+    text-align: center;
+}
 
   #weather h1 {
       font-size: 30px;

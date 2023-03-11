@@ -30,6 +30,7 @@ header{
     text-align: center;
     padding: 10px 80px;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 #logo-box {
@@ -52,6 +53,7 @@ footer {
     font-family: 'Sofia Sans', sans-serif;
     text-align: center;
     padding: 10px 80px;
+    margin-top: 100px;
 }
 
 nav ul {
@@ -447,6 +449,70 @@ form input {
 #membership-description li{
     font-family: 'Sofia Sans', sans-serif;
 }
+
+.directory-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.directory-grid section {
+    border: 2px solid darkgray;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.directory-grid section img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.directory-grid section p {
+    font-size: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.directory-list section:nth-child(even){
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+
+.directory-list section:nth-child(odd){
+    background-color: rgb(95, 153, 240);
+    padding: 10px;
+  
+}
+
+.directory-list section {
+    display: flex;
+    gap: 15px;
+}
+
+.directory-list img {
+    display: none;
+}
+
+#directory-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
 /* Medium */
 @media screen and (max-width: 900px){
     #home-grid {
@@ -613,5 +679,14 @@ form input {
 
     #join-grid {
         flex-direction: column;
+    }
+
+    .directory-list section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .directory-list section p {
+        margin: 0;
     }
 }

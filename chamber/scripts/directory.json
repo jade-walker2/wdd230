@@ -1,0 +1,76 @@
+{
+    "business":[
+        {
+            "name":"Action Motor Sports",
+            "address": "1355 E Lincoln Rd, Idaho Falls, ID 83401",
+            "phone": "208-522-3050",
+            "url": "https://www.actionmotor.com/",
+            "logo": "./images/actionmotor-logo.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name":"RiverBend Communications",
+            "address": "400 W Sunnyside Rd, Idaho Falls, ID 83402",
+            "phone": "208-523-3722",
+            "url": "https://eiradio.com/",
+            "logo": "./images/riverbend.jpeg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name":"Lowes",
+            "address": "925 E 17th St, Idaho Falls, ID 83404",
+            "phone": "208-542-9030",
+            "url": "https://www.lowes.com/store/ID-Idaho-Falls/1906",
+            "logo": "./images/lowes.png",
+            "membershipLevel": "NP"
+        },
+        {
+            "name":"Zions Bank",
+            "address": "1235 S Utah Ave, Idaho Falls, ID 83402",
+            "phone": "208-523-5585",
+            "url": "https://www.zionsbank.com/",
+            "logo": "./images/zions.png",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name":"Applebees",
+            "address": "635 N Utah Ave, Idaho Falls, ID 83402",
+            "phone": "208-528-8985",
+            "url": "https://www.applebees.com/en",
+            "logo": "./images/applebees.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name":"Les Schwabb",
+            "address": "210 Constitution Way, Idaho Falls, ID 83402",
+            "phone": "208-522-2132",
+            "url": "https://www.actionmotor.com/",
+            "logo": "./images/Les-Schwab.jpeg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name":"Sand Creek Golf Course",
+            "address": "5200 S 25th E, Idaho Falls, ID 83404",
+            "phone": "208-612-8115",
+            "url": "https://golfif.com/sandcreek-golf-course/",
+            "logo": "./images/sandcreek-golf-logo.png",
+            "membershipLevel": "NP"
+        },
+        {
+            "name":"Taco Bell",
+            "address": "1000 E 17th St, Idaho Falls, ID 83404",
+            "phone": "208-522-8951",
+            "url": "https://www.tacobell.com/food?store=029849",
+            "logo": "./images/Taco-Bell-Logo.png",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name":"Idaho Environmental Coalition",
+            "address": "1580 Sawtelle St, Idaho Falls, ID 83402",
+            "phone": "208-533-0411",
+            "url": "https://idaho-environmental.com/",
+            "logo": "./images/IEC.png",
+            "membershipLevel": "Bronze"
+        }
+    ]
+}

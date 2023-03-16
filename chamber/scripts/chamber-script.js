@@ -79,3 +79,46 @@ console.log(error);
 
 apiFetch();
 
+// Get business data for spotlights
+
+const businessDataUrl = "./scripts/directory.json";
+
+
+function displaySpotlights(businessList){
+  businessList = businessList.filter(x => x.membershipLevel == 'gold' || x.membershipLevel == 'silver');
+  spotlights = []
+  for (let i=0; i < 3; i++){
+    var elt = Math.floor(Math.random() * businessList.length)
+    spotlights.push(businessList.splice(elt, 1));
+  }
+  console.log(businessList);
+  // Now display stuff
+  console.log(spotlights);
+  const spotlightsCont = document.querySelector("#spotlights");
+  for (let i = 0; i < spotlights.length; i++){
+    console.log(spotlights[i])
+    let cont = document.createElement('div') 
+    cont.setAttribute('id', `spotlight-${i+1}`)
+    cont.innerHTML =  `
+    <h1>${spotlights[i][0].name}</h1>
+    <img src=${spotlights[i][0].logo} alt="logo" >
+    <h2>${spotlights[i][0].address}</h2>
+    <a href=${spotlights[i][0].url} target="_blank">${spotlights[i][0].name}</a>
+    <p>${spotlights[i][0].phone}</p>
+
+  `
+    spotlightsCont.appendChild(cont)
+  }
+}
+
+async function getBusinessData() {
+  const response = await fetch(businessDataUrl);
+  if (response.ok) {
+    const data = await response.json();
+    displaySpotlights(data.business);
+  } else {
+    console.error("There was an error loading the data.");
+  }
+}
+
+getBusinessData();

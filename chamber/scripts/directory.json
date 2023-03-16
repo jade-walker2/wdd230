@@ -6,7 +6,7 @@
             "phone": "208-522-3050",
             "url": "https://www.actionmotor.com/",
             "logo": "./images/actionmotor-logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "silver"
         },
         {
             "name":"RiverBend Communications",
@@ -14,7 +14,7 @@
             "phone": "208-523-3722",
             "url": "https://eiradio.com/",
             "logo": "./images/riverbend.jpeg",
-            "membershipLevel": "Gold"
+            "membershipLevel": "gold"
         },
         {
             "name":"Lowes",
@@ -22,7 +22,7 @@
             "phone": "208-542-9030",
             "url": "https://www.lowes.com/store/ID-Idaho-Falls/1906",
             "logo": "./images/lowes.png",
-            "membershipLevel": "NP"
+            "membershipLevel": "np"
         },
         {
             "name":"Zions Bank",
@@ -30,7 +30,7 @@
             "phone": "208-523-5585",
             "url": "https://www.zionsbank.com/",
             "logo": "./images/zions.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "bronze"
         },
         {
             "name":"Applebees",
@@ -38,7 +38,7 @@
             "phone": "208-528-8985",
             "url": "https://www.applebees.com/en",
             "logo": "./images/applebees.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "silver"
         },
         {
             "name":"Les Schwabb",
@@ -46,7 +46,7 @@
             "phone": "208-522-2132",
             "url": "https://www.actionmotor.com/",
             "logo": "./images/Les-Schwab.jpeg",
-            "membershipLevel": "Gold"
+            "membershipLevel": "gold"
         },
         {
             "name":"Sand Creek Golf Course",
@@ -54,7 +54,7 @@
             "phone": "208-612-8115",
             "url": "https://golfif.com/sandcreek-golf-course/",
             "logo": "./images/sandcreek-golf-logo.png",
-            "membershipLevel": "NP"
+            "membershipLevel": "np"
         },
         {
             "name":"Taco Bell",
@@ -62,7 +62,7 @@
             "phone": "208-522-8951",
             "url": "https://www.tacobell.com/food?store=029849",
             "logo": "./images/Taco-Bell-Logo.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "bronze"
         },
         {
             "name":"Idaho Environmental Coalition",
@@ -70,7 +70,7 @@
             "phone": "208-533-0411",
             "url": "https://idaho-environmental.com/",
             "logo": "./images/IEC.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "bronze"
         }
     ]
 }

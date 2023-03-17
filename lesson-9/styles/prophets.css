@@ -1,0 +1,31 @@
+body {
+    align-items: center;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cards section {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    background-color: cornsilk;
+}
+
+.cards h2 {
+    color: cornflowerblue;
+}
+
+footer {
+   text-align: center;
+   margin-top: 20px;
+}

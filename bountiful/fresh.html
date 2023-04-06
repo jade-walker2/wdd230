@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/bountiful.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/order.js" defer></script>
+    <link rel="stylesheet" href="./styles/bountiful.css">
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <div id="logo-box">
+            <img src="./images/bountiful-logo.png" alt="" width="170">
+            </div>
+            <div id="title-div">
+                <h1 id="title">Bountiful Foods</h1>
+                <h2 id="title2">Carlsbad</h2>
+            </div>
+           
+           <div class="date"></div>
+            <div id="social-media">
+            <a href="https://www.facebook.com/groups/lifeinidahofalls" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/idahofallschamber/" class="fa fa-instagram"></a>
+            <a href="https://www.instagram.com/idahofallschamber/" class="fa fa-twitter"></a>
+            </div>
+        
+        <nav id="topnav">
+            <a href="home.html">Home</a>
+            <a href="fresh.html" class="current">Fresh</a>
+            <a href="order.html">Order</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    
+    </header>
+    <main>
+        <div id="fresh-grid">
+            <div id="fresh-images">
+                <img src="./images/fruit-drink1.jpg" alt="fruit drink" id="image1">
+                <img src="./images/fruit-drink2.avif" alt="fruit drink2" id="image2">
+                <img src="./images/fruit-drink3.jpg" alt="fruit drink3" id="image3">
+            </div>
+            <form id="orderform" action="order.html" method="GET">
+                <h1>Custom Drink Maker</h1>
+                <hr>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+              
+                <label for="fruit-1">Fruit 1:</label>
+                <select id="fruit-1" name="fruit-1" required>
+                    <option value="value" selected>Select a Fruit</option> 
+                </select>
+              
+                <label for="fruit-2">Fruit 2:</label>
+                <select id="fruit-2" name="fruit-2" required>
+                    <option value="value" selected>Select a Fruit</option> 
+                </select>
+              
+                <label for="fruit-3">Fruit 3:</label>
+                <select id="fruit-3" name="fruit-3" required>
+                    <option value="value" selected>Select a Fruit</option> 
+                </select>
+              
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea>
+              
+                <button type="submit">Create</button>
+              </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footer-container">
+        <div id="logo-box-footer">
+            <img src="./images/bountiful-logo.png" alt="bountiful logo">
+            </div>
+            <div id="footer-title">
+                <h1>Bountiful Foods</h1>
+                <h2>1234 Bountiful Drive, Carlsbad, CA 92024</h2>
+            </div>
+            <div id="contact-info">
+                <h2>@bountifulfoodscarlsbad.com</h2>
+                <h2>+(949)-789-1235</h2>
+            </div>
+            <div id="location">
+                <a href="https://goo.gl/maps/baG7qUNEKyafiv1q6"> 
+                    <img src="./images/location.svg" alt="Map Icon">
+                </a>
+                <p>Map</p>
+            </div>
+            
+        <div id="footer-end">
+            <hr>
+            <p id="copyright">&copy; <span id="date"></span> | Jade Walker | Idaho | <span id = "result"></span></p>
+        </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
+
+        
+        
+        
+        
+        

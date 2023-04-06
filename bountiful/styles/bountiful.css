@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #D9CFC1;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #80A1C1;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 170px auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#title-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+#title {
+    grid-column: 2 / 4;
+    margin: 0;
+    font-size: 60px;
+    text-align: left;
+    
+}
+
+#title2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    margin: 0;
+    font-size: 45px;
+    text-align: left;
+}
+
+#home-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    padding: 15px;
+    gap: 15px;
+}
+
+#home-grid h1, h2, p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#social-media {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.fa-facebook {
+    color: white;
+    font-size: 35px;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 35px;
+}
+
+.fa-twitter {
+    color: white;
+    font-size: 35px;
+}
+
+.date {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+#topnav {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.current {
+    background-color: coral;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#home-grid p {
+    font-size: 25px;
+    background: white;
+    padding: 15px;
+}
+
+#caption, #caption2, #caption3 {
+    text-align: center;
+}
+
+#current-temp, #current-temp2, #current-temp3 {
+    text-align: center;
+}
+
+.weather-container, .conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-container figure, p {
+    margin: 0;
+    
+}
+
+#weather, #weather2, #weather3 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+hr {
+    width: 100%;
+}
+
+#coastal-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#coastal-area img {
+    width: 100%;
+}
+
+#coastal-area button {
+    font-size: 55px;
+    width: 600px;
+    border-radius: 8px;
+    background-color: coral;
+}
+
+#home-fruit-images {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-fruit-images img {
+    width: 270px;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: auto 170px auto auto;
+    grid-template-rows: auto auto;
+    padding: 15px;
+}
+
+#footer-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+#footer-end {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    text-align: center;
+
+}
+
+#logo-box-footer {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#logo-box-footer img {
+    width: 170px;
+}
+
+#contact-info {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#location {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#location img {
+    width: 50px;
+    height: 50px;
+}
+
+#fresh-grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+    gap: 20px;
+}
+
+#fresh-grid img {
+    width: 300px;
+}
+
+form button {
+    font-size: 55px;
+    width: 600px;
+    border-radius: 8px;
+    align-self: center;
+    background-color: coral;
+}
+
+#fresh-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+form {
+    background-color:lightgray;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    font-size: 55px;
+}
+
+form input {
+    padding: 5px;
+}
+
+#order-grid {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order-grid h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    width: 1100px;
+    
+}
+
+#order-grid h1:nth-child(even){
+    font-size: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+#order-grid h1:nth-child(odd){
+    font-size: 30px;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+#order-grid span {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#order-title {
+   font-size: 35px;
+   margin: 0;
+   padding: 25px;  
+}
+
+#about-grid {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding: 15px;
+}
+
+#our-team {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#our-team h1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-size: 55px;
+    margin: 0;
+    padding: 15px;
+}
+
+#our-team img {
+    width: 200px;
+}
+
+#person {
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+
+#our-story {
+    display: grid;
+    grid-template-columns: auto 850px;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 15px;
+}
+
+#our-story h1 {
+    font-size: 55px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#our-story p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#about-photo1 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#about-photo2 {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+#our-mission {
+    display: grid;
+    grid-template-columns: 700px auto;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+}
+
+#our-mission h1 {
+    font-size: 55px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#our-mission p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#about-photo3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+}
+#about-photo4 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+}
+
+/* Medium */
+@media screen and (max-width: 800px){
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #title1, #title2 {
+        text-align: center;
+    }
+
+    #topnav {
+        gap: 120px;
+    }
+    
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-box-footer img {
+        margin: 0 auto;
+        display: block;
+        width: 200px;
+    }
+    
+    #home-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #weather-stuff {
+        display: flex;
+        gap: 25px;
+    }
+
+    #weather, #weather2, #weather3 {
+        width: 500px;
+    }
+
+    #home-fruit-images img{
+      width: 170px;
+    }
+
+    #fresh-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fresh-images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #fresh-images img{
+        width: 240px;
+    }
+
+    #order-grid h1:nth-child(even){
+        font-size: 30px;
+        background-color: lightgray;
+        border: 1px solid black;
+        width: 700px;
+    }
+    
+    #order-grid h1:nth-child(odd){
+        font-size: 30px;
+        background-color: coral;
+        border: 1px solid black;
+        width: 700px;
+    }
+
+    #our-story {
+        grid-template-columns: 250px 475px;
+    }
+
+    #our-story h1{
+        text-align: center;
+    }
+    #our-story p{
+        width: 475px;
+        font-size: 20px;
+    }
+    #about-photo1 {
+        width: 250px;
+    }
+    #about-photo2 {
+        width: 740px;
+    }
+    #our-mission {
+        grid-template-columns: 475px 250px;
+    }
+    #our-mission p{
+        width: 475px;
+        font-size: 15px;
+    }
+    #about-photo3 {
+        width: 250px;
+    }
+    #about-photo4 {
+        width: 740px;
+    }
+    #our-team {
+        grid-template-columns: 170px 170px 170px 170px;
+    }
+    #our-team img {
+        width: 170px;
+    }
+    #our-team p {
+        font-size: 17px;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 600px){
+    #home-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #weather-stuff {
+        display: flex;
+        gap: 25px;
+    }
+
+    #weather, #weather2, #weather3 {
+        width: 500px;
+    }
+
+    #coastal-area button {
+        width: 500px;
+    }
+
+    #home-fruit-images img{
+      width: 125px;
+    }
+
+    #fresh-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fresh-images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #fresh-images img{
+        width: 175px;
+    }
+
+    form button {
+        width: 450px;
+    }
+
+    #order-grid h1:nth-child(even){
+        font-size: 20px;
+        background-color: lightgray;
+        border: 1px solid black;
+        width: 540px;
+    }
+    
+    #order-grid h1:nth-child(odd){
+        font-size: 20px;
+        background-color: coral;
+        border: 1px solid black;
+        width: 540px;
+    }
+
+    #our-story {
+        grid-template-columns: 200px 325px;
+    }
+
+    #our-story h1{
+        text-align: center;
+    }
+    #our-story p{
+        width: 325px;
+        font-size: 15px;
+    }
+    #about-photo1 {
+        width: 200px;
+    }
+    #about-photo2 {
+        width: 540px;
+    }
+    #our-mission {
+        grid-template-columns: 275px 200px;
+    }
+    #our-mission p{
+        width: 275px;
+        font-size: 15px;
+    }
+    #about-photo3 {
+        width: 250px;
+        align-self: center;
+    }
+    #about-photo4 {
+        width: 540px;
+    }
+    #our-team {
+        grid-template-columns: 120px 120px 120px 120px;
+    }
+    #our-team img {
+        width: 120px;
+    }
+    #our-team p {
+        font-size: 12px;
+    }
+}

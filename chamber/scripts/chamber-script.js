@@ -21,6 +21,8 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 function myFunction() {
 	document.querySelector(".menu").classList.toggle("active");
   }
+
+  
   document.querySelector(".icon").addEventListener("click",myFunction);
 
   if (now.getDay()===1 || now.getDay()===2){

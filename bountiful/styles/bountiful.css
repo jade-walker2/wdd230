@@ -566,6 +566,11 @@ form input {
         flex-direction: column;
     }
 
+    #topnav {
+        gap: 80px;
+        text-align: center;
+    }
+
     #weather-stuff {
         display: flex;
         gap: 25px;
